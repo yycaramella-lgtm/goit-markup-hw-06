@@ -567,12 +567,15 @@ img {
   }
 
   .features-title {
-    font-size: 20px;
     font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
   }
 
   .features-text {
     font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
 
@@ -615,6 +618,7 @@ img {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
   color: #2e2f42;
 }
 
@@ -838,6 +842,7 @@ img {
 
 .footer-text {
   max-width: 288px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -857,6 +862,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   color: #ffffff;
 }
 
@@ -898,7 +904,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  align-items: center;
 }
 
 .footer-input {
@@ -937,6 +942,8 @@ img {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 
   color: #ffffff;
   background-color: #4d5ae5;
@@ -965,6 +972,9 @@ img {
     text-align: left;
     gap: 72px 24px;
   }
+    .footer-title {
+    text-align: left;
+  }
 
   .footer-logo-wrap {
     max-width: 264px;
@@ -977,6 +987,9 @@ img {
   .footer-input {
     width: 264px;
   }
+  .footer-social-list-wrap {
+    align-items: flex-start;
+  }
 
 }
 
@@ -987,10 +1000,12 @@ img {
     padding: 100px 0;
   }
 
-  .footer-container {
-    flex-wrap: nowrap;
-    gap: 0;
-  }
+    .footer-container {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: baseline;
+      text-align: left;
+    }
 
   .footer-container>div:first-child {
     margin-right: 120px;
