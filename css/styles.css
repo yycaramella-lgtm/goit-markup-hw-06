@@ -919,6 +919,11 @@ img {
 .footer-input::placeholder {
   color: #ffffff;
 }
+.footer-input:hover,
+.footer-input:focus {
+  border-color: #31d0aa;
+}
+
 
 .footer-btn {
   display: inline-flex;
